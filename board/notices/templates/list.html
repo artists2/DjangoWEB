@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+{% load static %}
+<head>
+    <link rel = "stylesheet" href="{% static 'css/bootstrap.css' %}">
+</head>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>리스트 공간입니다.</title>
 </head>
 <body>
-    <p>안녕하세요. 리스트 공간입니다.</p>
+    <h1 class="text-center text-primary">List</h1>
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>번호</th>
+            <th>제목</th>
+            <th>작성자</th>
+            <th>날짜</th>
+            <th>조회수</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>TEST</td>
+            <td>r00t0k</td>
+            <td>2020.10.05</td>
+            <td>1</td>
+        </tr>
+        </tbody>
+    </table>
+    <hr/>
+    <a class="btn btn-default pull-right">Write</a>
+    <div class="text-center">
+        <ul class="pagination">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+        </ul>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
 </body>
 </html>
