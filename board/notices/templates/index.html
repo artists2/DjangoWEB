@@ -15,11 +15,9 @@
 <body>
     <p>안녕하세요. 목차 공간입니다.</p>
     {% load static %}
-    <button class='btn btn-primary btn-lg'>
-        <a href="/introduce"> introduce</a>>
-    </button>
-    <button class = 'btn btn-primary btn-lg'>list</button>
-    <button class = 'btn btn-primary btn-lg'>write</button>
+    <a href = "{% url 'introduce' %}" class = "btn btn-primary btn-lg">introduce</a>
+    <a href = "{% url 'list' %}" class = "btn btn-primary btn-lg">list</a>
+    <a href = "{% url 'write' %}" class = "btn btn-primary btn-lg">write</a>
 {% load static %}
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
